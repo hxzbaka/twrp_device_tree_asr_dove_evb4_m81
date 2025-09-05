@@ -28,12 +28,9 @@ AB_OTA_PARTITIONS += \
     system \
     product \
     vendor \
-    odm \
-    odm_dlkm \
     vbmeta \
     vendor_boot \
     vendor_dlkm \
-    init_boot \
     vbmeta_system
     
 PRODUCT_PACKAGES += \
@@ -104,7 +101,7 @@ PRODUCT_PACKAGES += \
 
 # Otacert
 PRODUCT_EXTRA_RECOVERY_KEYS += \
-    $(DEVICE_PATH)/security/testkey.x509
+    $(DEVICE_PATH)/security/testkey
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)

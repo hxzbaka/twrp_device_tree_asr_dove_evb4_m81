@@ -1,0 +1,23 @@
+on fs
+    # mount /data by fstab
+    wait /dev/block/platform/soc/d4200000.axi/d4281000.sdh
+    symlink /dev/block/platform/soc/d4200000.axi/d4281000.sdh /dev/block/bootdevice
+    mount_all /etc/recovery.fstab --late
+
+on init
+    setprop sys.usb.configfs 1
+    setprop sys.usb.controller c0900100.udc
+    setprop sys.usb.ffs.aio_compat 1
+
+on init && property:ro.debuggable=1
+    start recovery-console
+
+service recovery-console /system/bin/sh
+    class core
+     console
+     disabled
+     user root
+     group root shell log readproc
+     seclabel u:r:su:s0
+     setenv HOSTNAME console
+

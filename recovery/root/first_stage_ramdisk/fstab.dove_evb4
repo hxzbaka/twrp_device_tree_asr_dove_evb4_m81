@@ -1,0 +1,35 @@
+# Android fstab file.
+#<src>                                         <mnt_point>  <type>  <mnt_flags and options>  <fs_mgr_flags>
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+system        /system        erofs   ro  wait,logical,first_stage_mount,slotselect,avb=vbmeta_system,avb_keys=/avb
+system    /system    ext4    ro,barrier=1    wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb
+system_ext    /system_ext    erofs   ro  wait,logical,first_stage_mount,slotselect,avb
+vendor        /vendor        erofs   ro  wait,logical,first_stage_mount,slotselect,avb
+vendor_dlkm   /vendor_dlkm   erofs   ro  wait,logical,first_stage_mount,slotselect,avb
+product       /product       erofs   ro  wait,logical,first_stage_mount,slotselect,avb
+
+/dev/block/bootdevice/by-name/customconfig        /custom      ext4    ro,barrier=1,inode_readahead_blks=8          wait
+/dev/block/by-name/boot /boot emmc defaults recoveryonly,slotselect,first_stage_mount,avb=boot
+/dev/block/by-name/init_boot /init_boot emmc defaults recoveryonly,slotselect,first_stage_mount,avb=init_boot
+/dev/block/by-name/vendor_boot /vendor_boot emmc defaults recoveryonly,slotselect
+
+/dev/block/bootdevice/by-name/persist        /mnt/vendor/persist      ext4    ro,barrier=1,inode_readahead_blks=8          wait
+/dev/block/bootdevice/by-name/oem            /oem                     ext4    ro,barrier=1,inode_readahead_blks=8          check,nofail
+/dev/block/bootdevice/by-name/modem          /mnt/vendor/modem        ext4    ro,barrier=1,inode_readahead_blks=8          wait,slotselect
+/dev/block/bootdevice/by-name/cmrdata        /mnt/vendor/cmrdata      ext4    noatime,nosuid,nodev,discard                 wait,check,formattable
+/dev/block/bootdevice/by-name/userdata       /data         f2fs    noatime,nosuid,nodev,discard,inlinecrypt,reserve_root=32768,resgid=1065,fsync_mode=nobarrier    latemount,wait,formattable,check,fileencryption=aes-256-xts,keydirectory=/metadata/vold/metadata_encryption,quota,reservedsize=128M,checkpoint=fs
+/dev/block/by-name/cache          /cache        ext4    discard,noatime,nosuid,nodev    wait,check,first_stage_mount
+/dev/block/bootdevice/by-name/misc           /misc         emmc    defaults                                     defaults
+/dev/block/bootdevice/by-name/devinfo           /devinfo         emmc    defaults                                     defaults
+/devices/platform/soc/c0900100.ehci/usb*      auto          auto    defaults  voldmanaged=usbdisk:auto
+/devices/platform/soc/d4200000.axi/d4280000.sdh/mmc_host/mmc*    auto    auto    defaults    voldmanaged=sdcard1:auto
+# move zram enable from fstab to vendor init shell script, that is more flexible.
+# /dev/block/zram0                             none          swap    defaults                                     zramsize=1395864371
+
+/dev/block/platform/soc/d4200000.axi/d4281000.sdh/by-name/metadata  /metadata  f2fs   discard,noatime,nosuid,nodev    wait,formattable,check,first_stage_mount
+# /dev/block/platform/soc/d4200000.axi/d4281000.sdh/by-name/system    /system    erofs   ro  wait,first_stage_mount
+# /dev/block/platform/soc/d4200000.axi/d4281000.sdh/by-name/system_ext    /system_ext    erofs    ro  wait,first_stage_mount
+# /dev/block/platform/soc/d4200000.axi/d4281000.sdh/by-name/vendor    /vendor    erofs   ro  wait,first_stage_mount
+# /dev/block/platform/soc/d4200000.axi/d4281000.sdh/by-name/product   /product   erofs   ro  wait,first_stage_mount

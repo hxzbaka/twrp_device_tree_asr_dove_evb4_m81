@@ -1,0 +1,129 @@
+/lib/modules/trusty-virtio.ko: /lib/modules/trusty-core.ko
+/lib/modules/asr_gpufreq_cooling.ko: /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko /lib/modules/pvrsrvkm.ko
+/lib/modules/bootinfo.ko: /lib/modules/plat.ko
+/lib/modules/cpufreq_userspace.ko:
+/lib/modules/dmazone_heap.ko:
+/lib/modules/asr-drm.ko: /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/phy-asr-ci-usb2.ko: /lib/modules/plat.ko
+/lib/modules/bluesleep.ko: /lib/modules/asr5803-power.ko /lib/modules/asr_serial.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/plat.ko
+/lib/modules/cma_heap.ko:
+/lib/modules/lzo.ko:
+/lib/modules/asr-pd-dove.ko: /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/plat.ko
+/lib/modules/asr-pm813l.ko:
+/lib/modules/cam_plat.ko:
+/lib/modules/seh.ko: /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/plat.ko
+/lib/modules/silead_fp.ko: /lib/modules/asr-drm.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/asr-pm813l-ldo.ko:
+/lib/modules/timer-asr.ko:
+/lib/modules/asr-pm.ko: /lib/modules/plat.ko
+/lib/modules/asr-snd-audcodec-a0.ko: /lib/modules/snd-soc-asr.ko /lib/modules/adsp.ko /lib/modules/asr-pm853.ko /lib/modules/asr-pm813l.ko /lib/modules/plat.ko
+/lib/modules/i2c-mux.ko:
+/lib/modules/amvx.ko: /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/rotary_encoder.ko:
+/lib/modules/pvrsrvkm.ko:
+/lib/modules/asr-keyreset.ko: /lib/modules/ramdump.ko /lib/modules/ramdump_m.ko
+/lib/modules/asr_ce_engine.ko: /lib/modules/plat.ko
+/lib/modules/governor_asr_ddr.ko: /lib/modules/asr-clk-dove.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/mmp_pdma.ko: /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/plat.ko
+/lib/modules/ccinetdev.ko: /lib/modules/psdatastub.ko /lib/modules/data_path.ko /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/asr_mipi_panel.ko: /lib/modules/asr-backlight.ko /lib/modules/asr-drm.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/dummy_battery.ko:
+/lib/modules/snd-soc-asr.ko: /lib/modules/adsp.ko /lib/modules/plat.ko
+/lib/modules/asr_ci_udc_core.ko: /lib/modules/phy-asr-ci-otg.ko /lib/modules/pm833_power.ko /lib/modules/class-dual-role.ko /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/data_path.ko: /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/asr-dc-drm.ko: /lib/modules/asr-backlight.ko /lib/modules/asr-drm.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/eta6937_charger.ko: /lib/modules/ext_charger.ko /lib/modules/asr_ci_udc_core.ko /lib/modules/phy-asr-ci-otg.ko /lib/modules/pm833_power.ko /lib/modules/class-dual-role.ko /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/telcom.ko:
+/lib/modules/ext_charger.ko: /lib/modules/asr_ci_udc_core.ko /lib/modules/phy-asr-ci-otg.ko /lib/modules/pm833_power.ko /lib/modules/class-dual-role.ko /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/i2c-asr.ko: /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/plat.ko
+/lib/modules/hynitron_touch.ko: /lib/modules/asr-drm.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/asr-clk-dove.ko: /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/ssipcmisck.ko:
+/lib/modules/btl_ts_drv.ko: /lib/modules/asr-drm.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/asr-ddr-perf.ko:
+/lib/modules/asr_pmic_onkey.ko:
+/lib/modules/usb_f_debug.ko:
+/lib/modules/cam_sensor.ko: /lib/modules/cam_ccic.ko /lib/modules/cam_plat.ko
+/lib/modules/asr-ce-glue.ko: /lib/modules/asr_ce_engine.ko /lib/modules/plat.ko
+/lib/modules/jpu.ko: /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/plat.ko:
+/lib/modules/asr-pmic-thermal.ko:
+/lib/modules/asr-pm853-buck.ko:
+/lib/modules/gs_modem.ko: /lib/modules/psdatastub.ko /lib/modules/data_path.ko /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/citty.ko:
+/lib/modules/leds-aw36515.ko:
+/lib/modules/radio-asr.ko: /lib/modules/adsp.ko /lib/modules/plat.ko
+/lib/modules/asr-backlight.ko:
+/lib/modules/asr-pm853.ko:
+/lib/modules/hwmap.ko:
+/lib/modules/class-dual-role.ko:
+/lib/modules/asr-ddraxi-mon.ko: /lib/modules/plat.ko
+/lib/modules/fault.ko:
+/lib/modules/ehci-hcd-asr.ko:
+/lib/modules/vh_sched.ko:
+/lib/modules/cam_cpp.ko: /lib/modules/cam_plat.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/asr-ddr-fc.ko: /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/asr_serial.ko: /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/plat.ko
+/lib/modules/asrbt.ko: /lib/modules/asr5803-power.ko
+/lib/modules/asr-pm853-ldo.ko:
+/lib/modules/trusty-log.ko: /lib/modules/trusty-core.ko
+/lib/modules/sdhci-asr.ko: /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/asr_cpufreq_cooling.ko: /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/lzo-rle.ko:
+/lib/modules/cam_vi.ko: /lib/modules/cam_ccic.ko /lib/modules/cam_plat.ko /lib/modules/asr-drm.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/asr-spi.ko: /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/plat.ko
+/lib/modules/leds-pmic-vibra.ko:
+/lib/modules/asr-pm813l-buck.ko:
+/lib/modules/adsp.ko: /lib/modules/plat.ko
+/lib/modules/cci_datastub.ko: /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/trusty-ipc.ko: /lib/modules/trusty-core.ko
+/lib/modules/asr_rotary_key.ko: /lib/modules/asr-pm.ko /lib/modules/plat.ko
+/lib/modules/usb_f_diag.ko:
+/lib/modules/nanohub_aipc.ko: /lib/modules/adsp.ko /lib/modules/plat.ko
+/lib/modules/lz4.ko: /lib/modules/plat.ko
+/lib/modules/zsmalloc.ko:
+/lib/modules/ehci-asr-ci.ko: /lib/modules/ehci-hcd-asr.ko /lib/modules/plat.ko
+/lib/modules/asr_pa_cooling.ko: /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/asr_gnss.ko: /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/cpufreq-dt.ko:
+/lib/modules/asr-dvfs-dove.ko: /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/system_heap.ko:
+/lib/modules/asr_wdt.ko:
+/lib/modules/asr-hwrng.ko: /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/plat.ko
+/lib/modules/phy-asr-ci-otg.ko: /lib/modules/pm833_power.ko /lib/modules/class-dual-role.ko /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/asr5803.ko: /lib/modules/asr_gnss.ko /lib/modules/sdhci-asr.ko /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/asr5803-power.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/ramdump.ko: /lib/modules/ramdump_m.ko
+/lib/modules/cidatattydev.ko: /lib/modules/cci_datastub.ko /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/sjtc_hall.ko: /lib/modules/asr-pm.ko /lib/modules/plat.ko
+/lib/modules/cam_isp.ko: /lib/modules/cam_plat.ko
+/lib/modules/asr-clk-late.ko: /lib/modules/asr-clk-dove.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/ramdump_m.ko:
+/lib/modules/cam_ccic.ko:
+/lib/modules/gpio-asr.ko:
+/lib/modules/mt3511.ko:
+/lib/modules/cpufreq_ondemand.ko:
+/lib/modules/asr_thermal.ko: /lib/modules/plat.ko
+/lib/modules/usimeventk.ko: /lib/modules/asr-pm.ko /lib/modules/plat.ko
+/lib/modules/msocketk.ko: /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/pwm_bl.ko:
+/lib/modules/pm813l_battery.ko: /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/leds-asr-pmic.ko:
+/lib/modules/pxa9xx_acipc.ko:
+/lib/modules/rtc-sa1100.ko: /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/asr-input-boost.ko: /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/trusty-core.ko:
+/lib/modules/cploaddev.ko: /lib/modules/telcom.ko
+/lib/modules/pwm-pxa.ko:
+/lib/modules/extcon-asrci.ko: /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/plat.ko
+/lib/modules/asr5803-power.ko:
+/lib/modules/cpuidle_qos.ko: /lib/modules/asr-pm.ko /lib/modules/plat.ko
+/lib/modules/pm833_power.ko: /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/des_generic.ko: /lib/modules/libdes.ko
+/lib/modules/trusty-share-clock.ko: /lib/modules/trusty-ipc.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/plat.ko /lib/modules/trusty-core.ko
+/lib/modules/v2d.ko: /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/zram.ko: /lib/modules/zsmalloc.ko
+/lib/modules/libdes.ko:
+/lib/modules/i2c-dev.ko:
+/lib/modules/psdatastub.ko: /lib/modules/data_path.ko /lib/modules/msocketk.ko /lib/modules/seh.ko /lib/modules/cploaddev.ko /lib/modules/telcom.ko /lib/modules/i2c-asr.ko /lib/modules/pxa9xx_acipc.ko /lib/modules/asr-ddr-fc.ko /lib/modules/asr-ddraxi-mon.ko /lib/modules/asr-ddr-perf.ko /lib/modules/asr-clk-dove.ko /lib/modules/cpuidle_qos.ko /lib/modules/asr-pm.ko /lib/modules/asr-dvfs-dove.ko /lib/modules/asr-pmic-dvc.ko /lib/modules/plat.ko
+/lib/modules/asr-pmic-dvc.ko:
+/lib/modules/iml_module.ko: /lib/modules/telcom.ko

@@ -1,0 +1,40 @@
+# By hxzbaka
+/data                   f2fs      /dev/block/bootdevice/by-name/userdata                                 flags=display=data;fileencryption=aes-256-xts,keydirectory=/metadata/vold/metadata_encryption
+
+/custom                 ext4      /dev/block/bootdevice/by-name/customconfig                             flags=display=custom
+/boot                   emmc      /dev/block/by-name/boot                                                flags=display=boot;slotselect;backup=1;flashimg=1
+/init_boot              emmc      /dev/block/by-name/init_boot                                           flags=display=init_boot;slotselect;backup=1;flashimg=1
+/vendor_boot            emmc      /dev/block/by-name/vendor_boot                                         flags=display=vendor_boot;slotselect;backup=1;flashimg=1
+/mnt/vendor/persist     ext4      /dev/block/bootdevice/by-name/persist                                  flags=display=persist
+/oem                    ext4      /dev/block/bootdevice/by-name/oem                                      flags=display=oem
+/mnt/vendor/modem       ext4      /dev/block/bootdevice/by-name/modem                                    flags=display=modem;slotselect
+/mnt/vendor/cmrdata     ext4      /dev/block/bootdevice/by-name/cmrdata                                  flags=display=cmrdata
+/cache                  ext4      /dev/block/by-name/cache                                               flags=display=cache
+/misc                   emmc      /dev/block/bootdevice/by-name/misc                                     flags=display=misc
+/devinfo                emmc      /dev/block/bootdevice/by-name/devinfo                                  flags=display=devinfo
+auto                    auto      /devices/platform/soc/c0900100.ehci/usb*                               flags=display=auto
+auto                    auto      /devices/platform/soc/d4200000.axi/d4280000.sdh/mmc_host/mmc*          flags=display=auto
+/metadata               f2fs      /dev/block/platform/soc/d4200000.axi/d4281000.sdh/by-name/metadata     flags=display=metadata;backup=1
+
+# ASR BSP Partitions
+# A/B
+/spl_ota                emmc      /dev/block/bootdevice/by-name/spl_ota                                    flags=display=spl_ota;slotselect
+/sloader                emmc      /dev/block/bootdevice/by-name/sloader                                    flags=display=sloader;slotselect
+/secureos               emmc      /dev/block/bootdevice/by-name/secureos                                   flags=display=secureos;slotselect
+/sloader                emmc      /dev/block/bootdevice/by-name/uboot                                      flags=display=uboot;slotselect
+/modem                  emmc      /dev/block/bootdevice/by-name/modem                                      flags=display=modem;slotselect
+/dtbo                   emmc      /dev/block/bootdevice/by-name/dtbo                                       flags=display=dtbo;slotselect;backup=1;flashimg=1
+/vbmeta                 emmc      /dev/block/bootdevice/by-name/vbmeta                                     flags=display=vbmeta;slotselect
+/vbmeta_system          emmc      /dev/block/bootdevice/by-name/vbmeta_system                              flags=display=vbmeta_system;slotselect
+
+# A
+/custom_ex              emmc      /dev/block/bootdevice/by-name/customconfig_ex                            flags=display=customconfig_ex
+/cmrdata                emmc      /dev/block/bootdevice/by-name/cmrdata                                    flags=display=cmrdata
+/tzdata                 emmc      /dev/block/bootdevice/by-name/tzdata                                     flags=display=tzdata
+/sgtc                   emmc      /dev/block/bootdevice/by-name/sgtc                                       flags=display=sgtc
+/lockpin                emmc      /dev/block/bootdevice/by-name/lockpin                                    flags=display=lockpin
+
+# EMMC BOOT0/1
+# Kernel not supported
+# /epl                  emmc      /dev/block/mmcblk0boot0                                                  flags=display=epl
+# /spl                  emmc      /dev/block/mmcblk0boot1                                                  flags=display=spl

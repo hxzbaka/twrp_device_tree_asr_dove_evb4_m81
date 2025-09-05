@@ -1,0 +1,5 @@
+blocklist adsp_ipc_test.ko
+blocklist asr5803.ko
+blocklist aic8800_bsp.ko
+blocklist aic8800_fdrv.ko
+blocklist asrbt.ko

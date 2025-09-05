@@ -2,7 +2,7 @@
 
 =========================================
 
-The Redmi K50 (codenamed _"dove_evb4"_) is a high-end, mid-range smartphone from ASR.
+The M81 (codenamed _"dove_evb4"_) is a smartwatch produced by Hangsheng.
 
 It was released in 2025.
 
@@ -19,7 +19,6 @@ Finally execute these:
 
 ```
 source build/envsetup.sh
-repopick <needed patch>
 lunch twrp_dove_evb4-eng
 mka vendorbootimage -j$(nproc --all)
 ```

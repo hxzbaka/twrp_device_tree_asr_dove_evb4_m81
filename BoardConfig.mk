@@ -79,7 +79,7 @@ BOARD_BOOT_HEADER_VERSION := 4
 BOARD_DTB_SIZE := 50304
 BOARD_DTB_OFFSET := 0x1430000
 BOARD_HEADER_SIZE := 2128
-BOARD_VENDOR_CMDLINE := loop.max_part=7 cma=16M@0x110400000 firmware_class.path=/vendor/firmware loglevel=0 bootconfig
+BOARD_VENDOR_CMDLINE := "loop.max_part=7 cma=16M@0x110400000 firmware_class.path=/vendor/firmware loglevel=0 bootconfig"
 
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --vendor_cmdline $(BOARD_VENDOR_CMDLINE)

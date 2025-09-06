@@ -59,8 +59,8 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.keymaster@4.1.so
 
 # Bootctrl
-# PRODUCT_PACKAGES += \
-     android.hardware.boot@1.0-impl-1.2 \
+PRODUCT_PACKAGES += \
+      android.hardware.boot@1.0-impl-1.2 \
 #     android.hardware.boot@1.2-asrimpl.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
@@ -77,8 +77,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
     android.hardware.health@2.0-service \
-    android.hardware.health@2.0-impl-default \
-    android.hardware.health-service.asr_recovery
+    android.hardware.health@2.0-impl-default
 
 # Keymaster
 PRODUCT_PACKAGES += \

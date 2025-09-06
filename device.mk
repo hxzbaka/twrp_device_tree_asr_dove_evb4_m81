@@ -99,9 +99,5 @@ PRODUCT_PACKAGES += \
 #     asr_plpath_utils \
 #     asr_plpath_utils.recovery
 
-# Otacert
-PRODUCT_EXTRA_RECOVERY_KEYS += \
-    $(DEVICE_PATH)/security/testkey
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
